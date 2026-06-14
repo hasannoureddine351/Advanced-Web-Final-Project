@@ -1,0 +1,6 @@
+@UniSolve.Api_HostAddress = http://localhost:5082
+
+GET {{UniSolve.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

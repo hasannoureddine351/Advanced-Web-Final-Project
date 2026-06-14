@@ -1,0 +1,276 @@
+:root {
+  --chegg-orange: #eb7100;
+  --chegg-orange-dark: #d06500;
+  --chegg-orange-light: #fff4eb;
+  --chegg-text: #333333;
+  --chegg-muted: #666666;
+  --chegg-border: #e0e0e0;
+  --chegg-bg: #f5f5f5;
+  --bs-primary: #eb7100;
+  --bs-primary-rgb: 235, 113, 0;
+  --bs-link-color: #eb7100;
+  --bs-link-hover-color: #d06500;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--chegg-bg);
+  color: var(--chegg-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 64px);
+  padding-top: 1.5rem;
+}
+
+/* Navbar */
+.chegg-navbar {
+  background-color: #ffffff !important;
+  border-bottom: 3px solid var(--chegg-orange);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 0.6rem 0;
+}
+
+.chegg-brand {
+  font-weight: 800 !important;
+  font-size: 1.6rem !important;
+  color: var(--chegg-orange) !important;
+  letter-spacing: -0.5px;
+}
+
+.chegg-navbar .nav-link {
+  color: var(--chegg-text) !important;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem !important;
+}
+
+.chegg-navbar .nav-link.active,
+.chegg-navbar .nav-link:hover {
+  color: var(--chegg-orange) !important;
+}
+
+.chegg-navbar .dropdown-toggle {
+  color: var(--chegg-text) !important;
+  font-weight: 500;
+}
+
+.chegg-nav-user {
+  color: var(--chegg-muted) !important;
+  font-size: 0.9rem;
+}
+
+.role-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.role-tutor {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.role-admin {
+  background: var(--chegg-orange-light);
+  color: var(--chegg-orange-dark);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-chegg {
+  background-color: var(--chegg-orange) !important;
+  border-color: var(--chegg-orange) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-chegg:hover {
+  background-color: var(--chegg-orange-dark) !important;
+  border-color: var(--chegg-orange-dark) !important;
+}
+
+.btn-outline-primary {
+  color: var(--chegg-orange) !important;
+  border-color: var(--chegg-orange) !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--chegg-orange) !important;
+  color: #fff !important;
+}
+
+.btn-chegg-outline {
+  background: transparent !important;
+  border: 1.5px solid var(--chegg-orange) !important;
+  color: var(--chegg-orange) !important;
+  font-weight: 600;
+}
+
+.btn-chegg-outline:hover {
+  background: var(--chegg-orange) !important;
+  color: #fff !important;
+}
+
+/* Cards */
+.chegg-card,
+.card {
+  border: 1px solid var(--chegg-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+  background: #ffffff;
+}
+
+.chegg-card .card-title a,
+.card-title a {
+  color: var(--chegg-text);
+  font-weight: 600;
+}
+
+.chegg-card .card-title a:hover,
+.card-title a:hover {
+  color: var(--chegg-orange);
+}
+
+/* Page titles */
+.page-title {
+  color: var(--chegg-text);
+  font-weight: 700;
+}
+
+/* Auth pages */
+.auth-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #fff 0%, var(--chegg-bg) 100%);
+}
+
+.auth-card {
+  border: 1px solid var(--chegg-border);
+  border-top: 4px solid var(--chegg-orange);
+  border-radius: 8px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.auth-card h2 {
+  color: var(--chegg-orange);
+  font-weight: 700;
+}
+
+/* Badges */
+.badge-subject {
+  background: var(--chegg-orange-light) !important;
+  color: var(--chegg-orange-dark) !important;
+  font-weight: 600;
+  border: 1px solid #ffd9b3;
+}
+
+.badge-meta {
+  background: #f0f0f0 !important;
+  color: var(--chegg-muted) !important;
+  font-weight: 500;
+}
+
+/* Vote widget */
+.vote-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  gap: 2px;
+}
+
+.vote-btn {
+  background: #fff !important;
+  border: 1.5px solid var(--chegg-border) !important;
+  color: var(--chegg-muted) !important;
+  width: 36px;
+  height: 32px;
+  padding: 0 !important;
+  font-size: 0.75rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px !important;
+}
+
+.vote-btn:hover:not(:disabled) {
+  border-color: var(--chegg-orange) !important;
+  color: var(--chegg-orange) !important;
+}
+
+.vote-btn-active-up {
+  background: var(--chegg-orange-light) !important;
+  border-color: var(--chegg-orange) !important;
+  color: var(--chegg-orange) !important;
+}
+
+.vote-btn-active-down {
+  background: #fce8e8 !important;
+  border-color: #e53935 !important;
+  color: #e53935 !important;
+}
+
+.vote-score {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--chegg-text);
+  text-align: center;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.solution-author {
+  color: var(--chegg-orange);
+}
+
+.solution-content {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: var(--chegg-text);
+}
+
+/* Problem detail */
+.problem-header-card {
+  border-top: 4px solid var(--chegg-orange) !important;
+}
+
+.solution-form-card {
+  border-left: 4px solid var(--chegg-orange) !important;
+}
+
+/* Pagination */
+.page-link {
+  color: var(--chegg-orange);
+}
+
+.page-item.active .page-link {
+  background-color: var(--chegg-orange);
+  border-color: var(--chegg-orange);
+}
+
+/* Form focus */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--chegg-orange);
+  box-shadow: 0 0 0 0.2rem rgba(235, 113, 0, 0.2);
+}
+
+/* Spinner */
+.spinner-border {
+  color: var(--chegg-orange);
+}
