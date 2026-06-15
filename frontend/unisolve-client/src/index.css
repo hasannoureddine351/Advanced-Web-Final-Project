@@ -25,7 +25,6 @@ main {
   padding-top: 1.5rem;
 }
 
-/* Navbar */
 .chegg-navbar {
   background-color: #ffffff !important;
   border-bottom: 3px solid var(--chegg-orange);
@@ -80,7 +79,6 @@ main {
   color: var(--chegg-orange-dark);
 }
 
-/* Buttons */
 .btn-primary,
 .btn-chegg {
   background-color: var(--chegg-orange) !important;
@@ -118,7 +116,6 @@ main {
   color: #fff !important;
 }
 
-/* Cards */
 .chegg-card,
 .card {
   border: 1px solid var(--chegg-border) !important;
@@ -138,13 +135,11 @@ main {
   color: var(--chegg-orange);
 }
 
-/* Page titles */
 .page-title {
   color: var(--chegg-text);
   font-weight: 700;
 }
 
-/* Auth pages */
 .auth-page {
   min-height: calc(100vh - 64px);
   display: flex;
@@ -166,7 +161,6 @@ main {
   font-weight: 700;
 }
 
-/* Badges */
 .badge-subject {
   background: var(--chegg-orange-light) !important;
   color: var(--chegg-orange-dark) !important;
@@ -180,7 +174,6 @@ main {
   font-weight: 500;
 }
 
-/* Vote widget */
 .vote-widget {
   display: flex;
   flex-direction: column;
@@ -244,7 +237,6 @@ main {
   color: var(--chegg-text);
 }
 
-/* Problem detail */
 .problem-header-card {
   border-top: 4px solid var(--chegg-orange) !important;
 }
@@ -253,7 +245,6 @@ main {
   border-left: 4px solid var(--chegg-orange) !important;
 }
 
-/* Pagination */
 .page-link {
   color: var(--chegg-orange);
 }
@@ -263,14 +254,12 @@ main {
   border-color: var(--chegg-orange);
 }
 
-/* Form focus */
 .form-control:focus,
 .form-select:focus {
   border-color: var(--chegg-orange);
   box-shadow: 0 0 0 0.2rem rgba(235, 113, 0, 0.2);
 }
 
-/* Spinner */
 .spinner-border {
   color: var(--chegg-orange);
 }
